@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>First App</title>
+    <script src="\node_modules\angular\angular.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="\node_modules\bootstrap\dist\css\bootstrap.css"/>
+
+</head>
+<body >
+<div class="container" ng-controller="myCtrl as vm">
+    <header>
+        <h1>Address Book</h1>
+        <hr />
+    </header>
+
+
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th> Frist name</th>
+                <th> Last Name</th>
+                <th> Phone</th>
+                <th> Email</th>
+                <th> Action </th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+
+            <tr>
+                <td><input class='form-control' placeholder="First Name" type="text" ng-model="vm.info.firstname" /></td>
+                <td><input class='form-control' placeholder="Last Name" type="text" ng-model="vm.info.lastname" /></td>
+                <td><input class='form-control' placeholder="Last Name" type="text" ng-model="vm.info.phone" /></td>
+                <td><input class='form-control' placeholder="Last Name" type="text" ng-model="vm.info.email" /></td>
+
+
+
+
+                <td>
+                    <div class="text-center">
+                    <button type="button" class="btn btn-info btn-sm" title="Add" ng-disabled="vm.info._id" ng-click="vm.add();">
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </button>
+                    <button type="button" class="btn btn-info btn-sm" ng-disabled="!vm.info._id" title="Update" ng-click="vm.update(vm.info._id);">
+                        <span class="glyphicon glyphicon-floppy-saved"></span>
+                    </button>
+</div>
+                   </td>
+
+            </tr>
+            <tr ng-repeat="info in vm.infos">
+                <td>{{info.firstname}}</td>
+                <td>{{info.lastname}}</td>
+                <td>{{info.phone}}</td>
+                <td>{{info.email}}</td>
+                <td>
+                    <div class="text-center">
+                    <button type="button" class="btn btn-info btn-sm" title="Edit" ng-click="vm.edit(info._id);">
+                        <span class="glyphicon glyphicon-edit"></span>
+                    </button>
+                    <button type="button" class="btn btn-info btn-sm" title="Remove" ng-click="vm.del(info._id);">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                        </div>
+                </td>
+            </tr>
+            </tfoot>
+        </table>
+</div>
+
+
+</body>
+</html>
