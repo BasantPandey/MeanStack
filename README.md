@@ -41,3 +41,41 @@ Today's world is full of JavaScript. In this mean stack we developed fully JavaS
 
 * Heroku: Heroku is a cloud Platform-as-a-Service supporting several programming languages. Heroku was acquired by Salesforce.com in 2010.
 * mLab: mLab's MongoDB hosting platform is the fastest growing cloud database-as-a-service in the world.
+
+#Setup your environment
+
+## Install WebStrom
+* Download the repository form (https://www.jetbrains.com/webstorm/download/)
+
+### Install Node JS
+* Download the repository form (https://nodejs.org/en/download/)
+* Navigate to the command prompt to check Nodejs installation
+* Write the follwoing lines to  check the version
+* Node -v
+
+### Install Mongodb
+* Click to this link and install Mongodb: https://www.mongodb.com/download-center#community
+* Configure Mongodb
+* Create Data & log folder
+1. Data
+1. log
+* Add bin path to Environment variable
+* Start Mongod process
+
+> `mongod --dbpath=D:\mongodb\data --logpath=D:\mongodb\log\mongo.log`
+
+* * Start mongo command prompt
+* * Create Window Application
+* * Create Config file
+* Window Service
+
+> mongod.exe --config d:\mongodb\mongo.config –install
+* SC Start MongoDb
+* Run Mongodb commands to test
+
+### Install github
+
+Install github: https://desktop.github.com/
+### Install heroku
+
+Install heroku : https://toolbelt.heroku.com/windows
