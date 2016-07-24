@@ -1,0 +1,27 @@
+{
+  "name": "basant",
+  "version": "1.0.0",
+  "description": "Basant first project",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Server.js"
+  },
+  "engines": {
+    "node": "4.4.0",
+    "npm": "2.14.20"
+  },
+  "author": "basant pandey",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "body-parser": "^1.15.0",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.13",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "angular-route": "^1.5.8"
+  }
+}
