@@ -18,7 +18,7 @@
     "body-parser": "^1.15.0",
     "bootstrap": "^3.3.6",
     "express": "^4.13.4",
-    "mongoose": "^4.4.13",
+    "mongoose": "^5.9.24",
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
